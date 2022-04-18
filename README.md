@@ -84,10 +84,9 @@ Additionally, the key variables in descending order of importance are sorted bel
 
 ### Results
 
-From the results above, it is clear that the **EasyEnsembleClassifier model** provided the best results across multiple parameters. Its `balanced_accuracy` was highest at **92.54%** while its overall `precision` and `recall` rates were also highest at **99%** and **91%** respectively with the highest `F1_score` of **97%**. For the critical `high_risk` cases, the model yielded the best results with `precision` at 7% and `recall` high at 91%. Thus, this model would be the **preferred** among the others.
+From the results above, it is clear that the **EasyEnsembleClassifier model** provided the best results across multiple parameters. Its `balanced_accuracy` was highest at **92.54%** while its overall `precision` and `recall` rates were also highest at **99%** and **94%** respectively with the highest `F1_score` of **97%**. For the critical `high_risk` cases, the model yielded the best results with `precision` at **7%** and `recall` high at **91%**. Thus, this model would be the **preferred** among the others.
 
-Overall, the two Ensemble models performed the best with **Easy Ensemble Classifier Model** outperforming the ** Balanaced Random Forest Classifier Model**. Then both the Oversampled models performed slightly better than the Combined SMOTEEN model. The Undersampled **Cluster Centroids Model** performed the worst in terms of precision, sensitivity and accuracy overall. 
-* 
+Overall, the two Ensemble models performed the best with **Easy Ensemble Classifier Model** outperforming the **Balanaced Random Forest Classifier Model**. Then both the Oversampled models performed slightly better than the Combined SMOTEEN model. The Undersampled **Cluster Centroids Model** performed the worst in terms of precision, sensitivity and accuracy overall. 
 ### Recommendation:
 
 The **Easy Ensemble Model** performed the best and would be the preferred mdoel among the group. Especially among the critical `high_risk` group the model had a sensitivity/recall of 91% meaning over 9 out of 10 potential high_risk candidates would be detected by the model. This is the key criteria for `LendingClub` as they would not want to approve a loan to a high_risk candidate without proper due diligence. On the other hand falsely tagging `low_risk` individuals as `high_risk` has less implications on the business although it could potentially affect revenue negatively.
